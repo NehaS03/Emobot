@@ -65,7 +65,7 @@ import sqlite3
 #     return return_list
 
 # Load Gemini AI model
-genai.configure(api_key='AIzaSyAg6UtggTP8rYwWQ-oBhJQf7xDa7SyyhpE')
+genai.configure(api_key=API_KEY)
 gemini_model = genai.GenerativeModel('gemini-pro')
 chat = gemini_model.start_chat(history=[])
 
